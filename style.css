@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "IntelOne Display";
 }
 :root {
   --bg-color : #f9fafb;
@@ -10,3 +11,80 @@
   --gray : #6b7280;
   --light-gray : #e5e7eb;
 }
+
+
+/* =========== Hero =========== */
+main header {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+main header h1 {
+    color: var(--dark-blue);
+    font-size: 4rem;
+}
+main header p {
+    color: var(--gray);
+    font-size: 1rem;
+}
+main header button {
+    text-transform: uppercase;
+    font-weight: light;
+    margin-top: 30px;
+}
+/* =========== /Hero =========== */
+
+.link {
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+/* =========== Cards =========== */
+main section {
+    display: flex;
+    justify-content: space-evenly;
+}
+main section article {
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    padding: 10px;
+    cursor: pointer;
+    border: solid 1px transparent;
+    transition: all 0.3s;
+}
+main section article:hover {
+    background-color: transparent;
+    border: solid 1px var(--light-gray);
+    box-shadow: none;
+}
+main section article .image_container {
+    background-color: lightcyan;
+    border-radius: 5px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+main section article .image_container img {
+    height: 100%;
+}
+main section article h4 {
+    margin-top: 10px;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+main section article span {
+    color: var(--gray);
+    font-size: 13px;
+}
+main .link {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}
+/* =========== /Cards =========== */
