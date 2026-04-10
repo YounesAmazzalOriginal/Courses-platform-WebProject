@@ -1,9 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "IntelOne Display";
-}
+
 :root {
   --bg-color : #f9fafb;
   --purple : #6c63ff;
@@ -21,6 +16,7 @@ main header {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-align: center;
 }
 main header h1 {
     color: var(--dark-blue);
@@ -37,14 +33,11 @@ main header button {
 }
 /* =========== /Hero =========== */
 
-.link {
-    color: var(--purple);
-    text-decoration: underline;
-}
 
 /* =========== Cards =========== */
 main section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 main section article {

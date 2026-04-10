@@ -1,0 +1,60 @@
+:root {
+  --bg-color : #f9fafb;
+  --purple : #6c63ff;
+  --dark-blue : #111827;
+  --gray : #6b7280;
+  --light-gray : #e5e7eb;
+}
+
+
+/* =========== Header =========== */
+header {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    gap: 40px;
+}
+header section {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 10px;
+}
+header section:nth-child(1) {
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+header section:nth-child(1) img {
+    height: 100%;
+}
+
+header section h2 {
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+header section .title {
+    font-size: 30px;
+}
+header section p {
+    color: var(--gray);
+}
+header section span {
+    font-size: 14px;
+}
+header div {
+    display: flex;
+    gap: 20px;
+}
+header div h2:nth-child(2) {
+    color: var(--gray);
+    text-decoration: line-through;
+}
+/* header section:nth-child(1) {
+    background-color: red;
+} */
+/* =========== /Header =========== */
