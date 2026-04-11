@@ -56,7 +56,6 @@ main section article:hover {
     box-shadow: none;
 }
 main section article .image_container {
-    background-color: lightcyan;
     border-radius: 5px;
     height: 300px;
     display: flex;

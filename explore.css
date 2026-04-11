@@ -76,7 +76,6 @@ main header article {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 main header article .image_container {
-    background-color: lightblue;
     border-radius: 6px;
     width: 100%;
     aspect-ratio: 1/1;
