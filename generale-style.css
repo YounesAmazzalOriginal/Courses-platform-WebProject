@@ -53,7 +53,7 @@ h1 {
     text-decoration: underline;
 }
 
-input[type="text"], textarea {
+input[type="text"],input[type="email"],input[type="password"], textarea {
     outline: 0;
     border: 0;
     background-color: var(--light-gray);
@@ -69,6 +69,8 @@ input[type="text"]::placeholder, textarea::placeholder {
 /* =========== NAV =========== */
 nav {
     margin-left: 300px;
+    background-color: var(--bg-color);
+    border-radius: 0 0 20px 20px;
 }
 nav ul {
     display: flex;

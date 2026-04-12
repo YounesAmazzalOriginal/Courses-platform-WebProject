@@ -1,0 +1,41 @@
+:root {
+  --bg-color : #f9fafb;
+  --purple : #6c63ff;
+  --dark-blue : #111827;
+  --gray : #6b7280;
+  --light-gray : #e5e7eb;
+}
+
+body {
+    background-color: var(--light-gray) !important;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+header section {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px 10px;
+}
+header section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+header section form input {
+    padding: 12px 18px;
+}
+header section form button {
+    border-radius: 5px;
+    margin-top: 10px;
+}

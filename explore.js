@@ -575,8 +575,8 @@ searchInput.addEventListener("input", ()=>{
 
 // ========== Load courses ==========
 function loadCourses() {
-    for (i = 0; i <= courses.length; i++) {
-        let object = courses[i]
+    for (let i = 0; i < courses.length; i++) {
+        let object = courses[i];
 
         header.innerHTML += 
         `<article>
@@ -604,7 +604,11 @@ function search() {
     let count = 0;
     
     if (searchValue !== "") {
-
+      if (searchInput.value == "all") {
+        loadCourses();
+        searchCount.innerHTML = `All courses`;
+      }
+      else {
         for (let i = 0; i < courses.length; i++) {
             let object = courses[i];
       
@@ -624,8 +628,11 @@ function search() {
                 </article>`;
             }
         }
+        searchCount.innerHTML = `Results found : ${count}`;
+      }
     }
-
-    searchCount.innerHTML = `Results found : ${count}`;
+    else {
+      searchCount.innerHTML = "";
+    }
 }
 // ========== /Hundle Seaching ==========
