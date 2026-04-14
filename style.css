@@ -20,7 +20,8 @@ main header {
 }
 main header h1 {
     color: var(--dark-blue);
-    font-size: 4rem;
+    /* font-size: 4rem; */
+    font-size: 5vw;
 }
 main header p {
     color: var(--gray);
@@ -39,6 +40,7 @@ main section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    row-gap:40px;
 }
 main section article {
     border-radius: 10px;
@@ -80,3 +82,10 @@ main .link {
     margin: 20px auto;
 }
 /* =========== /Cards =========== */
+
+
+@media (max-width: 690px) {
+    main header h1 {
+        font-size: 8vw;
+    }
+}
