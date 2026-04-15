@@ -580,7 +580,7 @@ function loadCourses() {
 
         header.innerHTML += 
         `<article>
-                    <a href="">
+                    <a href="course-details.html" onclick="course(this)">
                         <div class="image_container">
                             <img src="assets/images/${object.image}" alt="course ${i+1} image">
                         </div>
@@ -635,4 +635,33 @@ function search() {
       searchCount.innerHTML = "";
     }
 }
+
+function clearInput() {
+  searchInput.focus();
+}
+
+searchInput.addEventListener("keyup", (event) => {
+  if (event.key == "Enter") {
+    search();
+    searchInput.blur();
+  }
+})
 // ========== /Hundle Seaching ==========
+
+
+
+
+// ========== stock THIS course details to local storage ==========
+function course(target) {
+  let title = target.querySelector("h4").textContent;
+  let courseDetails;
+  
+  for (let i = 0; i < courses.length; i++) {
+    if (courses[i].title.includes(title)) {
+      courseDetails = courses[i]
+    }
+  }
+
+  localStorage.setItem("this course details", JSON.stringify(courseDetails));
+}
+// ========== /Hundle Courses Details ==========

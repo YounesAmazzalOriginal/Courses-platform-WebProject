@@ -54,7 +54,15 @@ header div h2:nth-child(2) {
     color: var(--gray);
     text-decoration: line-through;
 }
-/* header section:nth-child(1) {
-    background-color: red;
-} */
 /* =========== /Header =========== */
+
+
+@media (max-width: 1000px) {
+    header {
+        flex-wrap: wrap;
+        padding: 40px 100px;
+    }
+    header section {
+        width: 100%;
+    }
+}

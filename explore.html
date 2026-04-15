@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore courses - Courses</title>
     <!-- Css -->
-    <link rel="stylesheet" href="explore.css">
-    <link rel="stylesheet" href="generale-style.css">
+    <link rel="stylesheet" href="style/explore.css">
+    <link rel="stylesheet" href="style/generale-style.css">
     <!-- Icons CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
 
     <!-- Javacscript -->
     <script src="explore.js" defer></script>
+    <script src="nav.js" defer></script>
 </head>
 <body>
+    <button class="open-nav" onclick="toggleNav()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -29,7 +33,7 @@
         <div class="search">
             <input type="text" placeholder="Search : all/..">
             <div>
-                <button class="close">
+                <button class="close" onclick="clearInput()">
                     <i class="fa-solid fa-x"></i>
                 </button>
                 <button onclick="search()">
@@ -43,11 +47,11 @@
         </header>
     </main>
 
-    <!-- <footer>
+    <footer>
         <a target="_blank" href="https://github.com/YounesAmazzalOriginal">
             <i class="fa-brands fa-github"></i>
         </a>
         <p>&copy; Powered by Younes AMAZZAL</p>
-    </footer> -->
+    </footer>
 </body>
 </html>

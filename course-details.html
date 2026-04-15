@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore courses - Courses</title>
     <!-- Css -->
-    <link rel="stylesheet" href="course-details.css">
-    <link rel="stylesheet" href="generale-style.css">
+    <link rel="stylesheet" href="style/course-details.css">
+    <link rel="stylesheet" href="style/generale-style.css">
     <!-- Icons CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
+    <!-- Javacscript -->
+    <script src="course-details.js" defer></script>
+    <script src="nav.js" defer></script>
 </head>
 <body>
+    <button class="open-nav" onclick="toggleNav()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -24,18 +30,15 @@
 
     <header>
         <section>
-            <img src="https://www.creativeitinstitute.com/images/course/course_1663052056.jpg" alt="course details image">
+            <img src="" alt="course details image">
         </section>
         <section>
-            <h2 class="title">Web development course</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt, saepe explicabo, consequatur, velit molestias repellat unde fuga officiis eligendi error molestiae. Perspiciatis itaque quis illo molestiae aut eius autem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt, saepe explicabo, consequatur, velit molestias repellat unde fuga officiis eligendi error molestiae. Perspiciatis itaque quis illo molestiae aut eius autem!
-            </p>
+            <h2 class="title"></h2>
+            <p></p>
             <span>4.5/5(+145)</span>
             <div class="price-container">
-                <h2>199$</h2>
-                <h2>350$</h2>
+                <h2 class="price"></h2>
+                <h2 class="old-price"></h2>
             </div>
             <button>BUY NOW</button>
         </section>

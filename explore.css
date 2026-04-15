@@ -103,3 +103,10 @@ main header article span {
 /* =========== /Header =========== */
 
 /* =========== /MAIN =========== */
+
+
+@media (max-width: 1000px) {
+    main .search {
+        margin-top: 20px;
+    }
+}
