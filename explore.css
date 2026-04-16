@@ -1,11 +1,3 @@
-:root {
-  --bg-color : #f9fafb;
-  --purple : #6c63ff;
-  --dark-blue : #111827;
-  --gray : #6b7280;
-  --light-gray : #e5e7eb;
-}
-
 /* =========== MAIN =========== */
 main .search {
     border-radius: 100px;
@@ -33,8 +25,8 @@ main button.close {
     font-size: 10px;
     display: none;
 }
-main button.close:hover{
-    background-color: inherit;
+main button.close:hover {
+    background-color: var(--dark-blue);
     color: inherit;
 }
 main button:nth-child(2) {
@@ -48,7 +40,7 @@ main button:nth-child(2) {
 main button:hover {
     border: 0;
     background-color: var(--dark-blue);
-    color: white;
+    color: var(--bg-color);
 }
 main .search div {
     display: flex;
@@ -110,3 +102,4 @@ main header article span {
         margin-top: 20px;
     }
 }
+

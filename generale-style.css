@@ -13,7 +13,7 @@
 }
 ::selection{
     background-color: var(--purple);
-    color: white;
+    color: var(--bg-color);
 }
 img {
     user-select: none;
@@ -32,7 +32,7 @@ a {
 button {
     background-color: var(--purple);
     border: 0;
-    color: white;
+    color: var(--bg-color);
     letter-spacing: 0.3px;
     border-radius: 1000px;
     padding: 10px 24px;
@@ -59,6 +59,9 @@ input[type="text"],input[type="email"],input[type="password"], textarea {
     background-color: var(--light-gray);
     border-radius: 3px;
 }
+input {
+    color: var(--dark-blue);
+}
 textarea {
     outline: 0;
 }
@@ -75,7 +78,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    padding-block: 20px;
+    padding: 20px 0;
 }
 nav ul li a.active {
     color: var(--purple);
@@ -88,35 +91,59 @@ nav ul li:hover a {
 }
 button.open-nav {
     display: none;
+    z-index: 100;
 }
 @media (max-width: 1000px) {
     nav {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        background-color: var(--light-gray);
+        justify-content: center;
+        background-color: var(--bg-color);
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
         border-radius: 0;
         margin: 0;
-        padding: 10px 0;
         position: absolute;
         top: 0;
-        width: 50%;
+        width: 100%;
         height: 100vh;
         transform: translateX(-200%);
         transition: transform 0.3s;
     }
     nav ul {
+        display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 6px;
         width: 100%;
-        padding: 0;
-    }
-    nav li {
-        background-color: var(--light-gray);
-        border-radius: 4px;
-        padding: 10px 0;
+        gap: 5px;
         margin: 0 10px;
+    }
+    nav ul li a {
+        background-color: var(--light-gray);
+        padding: 10px 0;
+        width: 100%;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+    }
+    nav ul li a.active {
+        background-color: var(--purple);
+        color: var(--bg-color);
+        position: relative;
+        /* overflow: hidden; */
+    }
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 1000px;
+        background-color: var(--purple);
+    }
+    nav ul li a.active::after {
+        background-color: var(--dark-blue);
+        width: 10%;
     }
 
     button.open-nav {
@@ -134,36 +161,51 @@ button.open-nav {
         margin: 10px;
     }
     button.open-nav.style1 {
-        background-color: transparent;
-        color: var(--dark-blue);
+        background-color: var(--dark-blue);
+        color: var(--bg-color);
     }
     button.open-nav:hover {
         color: var(--bg-color);
         border-color: transparent;
     }
-    button.open-nav.style1:hover {
-        color: var(--dark-blue);
-    }
 }
 /* =========== /NAV =========== */
+
+
+/* =========== Theme button =========== */
+.theme {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background-color: var(--dark-blue);
+    outline: 0px solid hsla(221, 39%, 11%, 0.6);
+    color: var(--bg-color);
+    border: 0;
+}
+.theme:hover {
+    border: 0;
+    background-color: var(--dark-blue);
+    color: var(--bg-color);
+    outline-width: 5px;
+}
+/* =========== /Theme button =========== */
 
 
 /* =========== FOOTER =========== */
 footer {
     background-color: var(--dark-blue);
-    color: white;
+    color: var(--bg-color);
     padding-block: 10px;
     font-size: 0.9rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     user-select: none;
-
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 footer a {
-    color: white;
+    color: var(--bg-color) !important;
 }
 /* =========== /FOOTER =========== */

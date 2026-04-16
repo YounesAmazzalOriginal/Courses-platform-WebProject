@@ -628,7 +628,7 @@ function search() {
                 </article>`;
             }
         }
-        searchCount.innerHTML = `Results found : ${count}`;
+        searchCount.innerHTML = `No result found`;
       }
     }
     else {
