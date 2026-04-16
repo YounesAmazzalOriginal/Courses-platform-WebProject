@@ -17,13 +17,18 @@ header section {
 }
 header section h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-block: 10px 20px;
 }
 header section form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+/* header section form span {
+    font-size: 14px;
+    margin-left: 10px;
+    color: red;
+} */
 header section form input {
     padding: 12px 18px;
 }
@@ -33,3 +38,11 @@ header section form button {
 }
 
 
+@media (max-width: 1000px) {
+    header {
+        margin-top: 20%;
+    }
+    section {
+        width: 80% !important;
+    }
+}

@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style/signup.css">
     <link rel="stylesheet" href="style/generale-style.css">
     <!-- Icons CDN -->
-    <link rel="stylesheet" href="style/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.jpg">
     <!-- Javacscript -->
     <script src="script/nav.js" defer></script>
 </head>
@@ -31,8 +32,8 @@
         <section>
             <h1>Sign Up</h1>
                 <form action="">
-                <input type="text" placeholder="First name" minlength="2" required >
-                <input type="text" placeholder="Last name" minlength="3" required >
+                <input class="firstname-input" pattern="^[A-Za-z][A-Za-z\s]*$" type="text" placeholder="First name" minlength="2" required >
+                <input pattern="^[A-Za-z][A-Za-z\s]*$" type="text" placeholder="Last name" minlength="3" required >
                 <input type="email" placeholder="Email" required >
                 <input type="password" placeholder="Password" minlength="4" required >
                 <button type="submit">Sign Up</button>
@@ -45,7 +46,7 @@
         <a target="_blank" href="https://github.com/YounesAmazzalOriginal">
             <i class="fa-brands fa-github"></i>
         </a>
-        <p>&copy; Powered by Younes AMAZZAL</p>
+        <p>&copy; This website codded by Younes AMAZZAL</p>
     </footer> -->
 </body>
 </html>

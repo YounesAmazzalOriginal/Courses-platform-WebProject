@@ -46,3 +46,11 @@ header textarea {
     min-height: 100px;
     max-height: 240px;
 }
+
+
+@media (max-width: 1000px) {
+    header form {
+        width: 80%;
+        margin: 40px auto;
+    }
+}
