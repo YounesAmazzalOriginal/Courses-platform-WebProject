@@ -1,0 +1,105 @@
+/* =========== MAIN =========== */
+main .search {
+    border-radius: 100px;
+    padding: 1px;
+    width: 80%;
+    margin: 0 auto;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--dark-blue);
+}
+main input {
+    height: 100%;
+    width: 80%;
+    border-radius: 100px !important;
+    padding-left: 15px;
+    background-color: transparent !important;
+}
+main button.close {
+    color: var(--dark-blue);
+    padding: 0;
+    background-color: transparent;
+    margin-right: 5px;
+    border: 0;
+    font-size: 10px;
+    display: none;
+}
+main button.close:hover {
+    background-color: initial;
+    color: var(--dark-blue);
+}
+main button:nth-child(2) {
+    background-color: var(--dark-blue);
+    padding: 0;
+    width: 50px;
+    height: 100%;
+    font-size: 12px;
+    border: 0;
+}
+main button:hover {
+    border: 0;
+    background-color: var(--dark-blue);
+    color: var(--bg-color);
+}
+main .search div {
+    display: flex;
+    gap: 3px;
+}
+
+main p {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--dark-blue);
+}
+
+/* =========== Header =========== */
+main header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+main header article {
+    border-radius: 7px;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+main header article .image_container {
+    border-radius: 6px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+main header article .image_container:hover img {
+    scale: 1.1;
+    filter: brightness(90%);
+}
+main header article .image_container img {
+    height: 100%;
+    transition: scale 0.2s;
+}
+main header article h4 {
+    margin-top: 10px;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+main header article span {
+    font-size: 12px;
+    color: var(--gray);
+}
+/* =========== /Header =========== */
+
+/* =========== /MAIN =========== */
+
+
+@media (max-width: 1000px) {
+    main .search {
+        margin-top: 20px;
+    }
+}
+
